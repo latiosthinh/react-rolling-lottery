@@ -1,0 +1,26 @@
+.lottery {
+	font-size: 700%;
+    height: 1em;
+    overflow: hidden;
+	display: flex;
+	justify-content: center;
+
+	&__digits {
+		list-style-type: none;
+		font-size: 1em;
+		line-height: 1em;
+	}
+}
+
+.rolling {
+	animation-name: luckie;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+/* Animations */
+@keyframes luckie {
+    100% {
+        margin-top: -7em;
+    }
+}
