@@ -12,7 +12,7 @@ function App() {
 
 	const [oldNumbers, setOldNumbers] = useState([])
 
-	const [chosenNumber, setChosenNumber] = useState('')
+	const [chosenNumber, setChosenNumber] = useState([])
 
 	const handleRandom = () => {
 		const _r = slice(Math.floor(random(maxNumber, oldNumbers)), maxNumber.toString().length)

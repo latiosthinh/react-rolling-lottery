@@ -8,10 +8,10 @@ const shuffle = array => {
 }
 
 const slice = (number, len) => {
-	const arr = Array.from(String( number ), Number)
+	let arr = Array.from(String( number ), Number)
 
 	if ( arr.length < len ) {
-		for ( let i = 0; i < len - arr.length; i++ ) {
+		for ( let i = 0; i < len - arr.length + 1; i++ ) {
 			arr.splice( 0, 0, 0 )
 		}
 	}
